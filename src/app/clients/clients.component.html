@@ -1,0 +1,23 @@
+<div class="animated flipInX"></div>
+<a routerLink = "/clientedit" class="btn btn-primary ">Client Edit</a>
+
+<div class="row animated bounceInUp" *ngFor = " let item of clients">
+  <div class="col-md-4">
+      <img class="client-thumb" src="{{item.imgUrl}}" >
+
+
+  </div>
+  <div class="col-md-8">
+    <h2>{{item.name}}</h2>
+
+
+  </div>
+
+
+</div>
+
+<li *ngFor="let item of clients" [@flyInOut] = "'in'">{{item.name}}</li>
+
+
+
+
